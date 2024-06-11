@@ -32,3 +32,11 @@
 
 		- build a device agnostic model
 		- using `nn.Linear` for linear regression task
+
+3. Neural Network Classification
+
+	- [PyTorch Classification](/notebooks/03_Classification/01_pytorch_classification.ipynb)
+
+		- create toy dataset for binary classification
+		- create linear and non-linear models
+		- plot decision boundary
