@@ -40,3 +40,8 @@
 		- create toy dataset for binary classification
 		- create linear and non-linear models
 		- plot decision boundary
+
+	- [Multi-Class Classification](/notebooks/03_Classification/02_multiclass_classification.ipynb)
+
+		- create toy dataset for muti-class classification
+		- create model for multi-class classification
