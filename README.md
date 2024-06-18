@@ -45,3 +45,13 @@
 
 		- create toy dataset for muti-class classification
 		- create model for multi-class classification
+
+	- [Classification Exercises](/notebooks/03_Classification/03_pytorch_classification_exercises.ipynb)
+
+		- **Binary classification:**
+			- Dataset: Scikit-learn's `make_moons()`
+			- Model: Feedforward non-linear (ReLU) Neural Network
+
+		- **Multi-Class Classification:**
+			- Dataset: 3 class spirals
+			- Model: Feedforward non-linear (Tanh) Neural Network
