@@ -55,3 +55,16 @@
 		- **Multi-Class Classification:**
 			- Dataset: 3 class spirals
 			- Model: Feedforward non-linear (Tanh) Neural Network
+
+4. Computer Vision
+
+	- [PyTorch Computer Vision](/notebooks/04_Vision/01_pytorch_computer_vision.ipynb)
+
+		- Work with FashionMNIST Dataset with `torch.utils.data.DataLoader`
+		- Build, train and evaluate baseline feedforward neural network with and with non-linearity
+		- Functionizing training_step, testing_step and model evaluation
+		- Build, train and evaluate Convolutional Neural Network (CNN) which replicates TinyVGG architecture
+		- Study `torch.nn.Conv2d` and `torch.nn.MaxPool2d`
+		- Compare results of all evaluated models
+		- Compute and visulize confusion matrix
+		- Save and Load best performing model
