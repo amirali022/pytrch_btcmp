@@ -68,3 +68,10 @@
 		- Compare results of all evaluated models
 		- Compute and visulize confusion matrix
 		- Save and Load best performing model
+
+	- [PyTorch Computer Vision Excercise](/notebooks/04_Vision/02_pytorch_computer_vision_exercises.ipynb)
+
+		- Work with MNIST dataset
+		- Train TinyVGG model on MNIST dataset using cpu and gpu
+		- Functionizing fit function
+		- Plotting loss and accuracy curve
