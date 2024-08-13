@@ -75,3 +75,14 @@
 		- Train TinyVGG model on MNIST dataset using cpu and gpu
 		- Functionizing fit function
 		- Plotting loss and accuracy curve
+
+5. Custom Datasets
+
+	- [PyTorch Custom Datasets](/notebooks/05_Custom_Datasets/01_pytorch_custom_datasets.ipynb)
+
+		- Work with pizza_steak_sushi dataset
+		- Loading Data using ImageFolder
+		- Loading Data using Custom Dataset
+		- Data Transformation + Data Augmentation
+		- Fitting TinyVGG Model on Dataset with and without Transform
+		- Evaluating and Comparing results using Loss and Accuracy Curves
