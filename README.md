@@ -86,3 +86,15 @@
 		- Data Transformation + Data Augmentation
 		- Fitting TinyVGG Model on Dataset with and without Transform
 		- Evaluating and Comparing results using Loss and Accuracy Curves
+
+6. Going Modular
+
+	- [Going Modular (cell mode)](/notebooks/06_Going_Modular/01_pytorch_going_modular.ipynb)
+
+		- a condensed version of the previous chapter's notebook [PyTorch Custom Datasets](/notebooks/05_Custom_Datasets/01_pytorch_custom_datasets.ipynb)
+		- containing `%%writefile` magic function to create scripts of different parts of notebook with different functionality:
+			- [data_setup.py](/notebooks/06_Going_Modular/going_modular/data_setup.py): create train/test DataLoaders
+			- [model_builder.py](/notebooks/06_Going_Modular/going_modular/model_builder.py): instantiate the PyTorch model
+			- [engine.py](/notebooks/06_Going_Modular/going_modular/engine.py): training and testing functions
+			- [utils.py](/notebooks/06_Going_Modular/going_modular/utils.py): utility function for saving PyTorch model
+			- [train.py](/notebooks/06_Going_Modular/going_modular/train.py): main function for training a model
