@@ -5,16 +5,32 @@ Trains a PyTorch image classification model using device-agnostic code.
 import os
 import torch
 from torchvision import transforms
-from timeit import default_timer as timer 
+from timeit import default_timer as timer
 import data_setup, engine, model_builder, utils
+import argparse
+from datetime import datetime
 
 if __name__ == "__main__":
 
-	# Setup hyperparameters
-	NUM_EPOCHS = 5
-	BATCH_SIZE = 32
-	HIDDEN_UNITS = 10
-	LEARNING_RATE = 0.001
+	parser = argparse.ArgumentParser( description="script for training a TinyVGG model on pizza steak sushi dataset")
+	parser.add_argument( "--learning_rate", type=float, default=0.001, required=False, help="specify learning rate (e.g. 0.001)")
+	parser.add_argument( "--batch_size", type=int, default=32, required=False, help="specify batch size for loading data (e.g. 32)")
+	parser.add_argument( "--num_epochs", type=int, default=5, required=False, help="specify the number of epochs (e.g. 5)")
+	parser.add_argument( "--hidden_units", type=int, default=10, required=False, help="specify the number of hidden units/filters in model (e.g. 10)")
+
+	args = parser.parse_args()
+
+	# # Setup hyperparameters
+	NUM_EPOCHS = args.num_epochs
+	BATCH_SIZE = args.batch_size
+	HIDDEN_UNITS = args.hidden_units
+	LEARNING_RATE = args.learning_rate
+
+	print( "Hyper Parameters:")
+	print( f"Number of Epochs: { NUM_EPOCHS}")
+	print( f"Batch Size: { BATCH_SIZE}")
+	print( f"Number of Hidden Units: { HIDDEN_UNITS}")
+	print( f"Learning Rate: { LEARNING_RATE}")
 
 	# Setup directories
 	train_dir = "data/pizza_steak_sushi/train"
@@ -67,4 +83,4 @@ if __name__ == "__main__":
 	# Save the model to file
 	utils.save_model( model=model,
 					target_dir="models",
-					model_name="01_going_modular_script_mode_tinyvgg_model.pth")
+					model_name=f"01_going_modular_script_mode_tinyvgg_model_{ datetime.now().isoformat()}.pth")

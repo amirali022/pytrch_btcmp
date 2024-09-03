@@ -97,4 +97,5 @@
 			- [model_builder.py](/notebooks/06_Going_Modular/going_modular/model_builder.py): instantiate the PyTorch model
 			- [engine.py](/notebooks/06_Going_Modular/going_modular/engine.py): training and testing functions
 			- [utils.py](/notebooks/06_Going_Modular/going_modular/utils.py): utility function for saving PyTorch model
-			- [train.py](/notebooks/06_Going_Modular/going_modular/train.py): main function for training a model
+			- [train.py](/notebooks/06_Going_Modular/going_modular/train.py): main function for training a model with custom hyperparameters using `argparse`
+			- [get_data.py](/notebooks/06_Going_Modular/going_modular/get_data.py): script for downloading the dataset
