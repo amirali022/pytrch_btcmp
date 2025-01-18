@@ -99,3 +99,11 @@
 			- [utils.py](/notebooks/06_Going_Modular/going_modular/utils.py): utility function for saving PyTorch model
 			- [train.py](/notebooks/06_Going_Modular/going_modular/train.py): main function for training a model with custom hyperparameters using `argparse`
 			- [get_data.py](/notebooks/06_Going_Modular/going_modular/get_data.py): script for downloading the dataset
+
+7. Transfer Learning
+
+	- [Transfer Learning](/notebooks/07_Transfer_Learning/01_pytorch_transfer_learning.ipynb)
+		- working with EfficientNet_B0 model trained on imagenet
+		- prepare data transformation according to pre-trained model (manual, auto)
+		- freezing feature layers and updating classifier layer
+		- training and evaluate the training process using loss curves
