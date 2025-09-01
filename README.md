@@ -107,3 +107,10 @@
 		- prepare data transformation according to pre-trained model (manual, auto)
 		- freezing feature layers and updating classifier layer
 		- training and evaluate the training process using loss curves
+
+8. Experiment Tracking
+
+	- [Experiment Tracking](/notebooks/08_Experiment_Tracking/01_experiment_tracking.ipynb)
+		- working with tensorboard and SummaryWriter class for experiment tracking
+		- experiment with different backbones (EffNetb0 vs EffNetb2)
+		- experiment with different dataset sizes (10% vs 20% of pizza, steak, sushi)
